@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "name": "Example Toolkit",
+      "description": "Placeholder open-source tool for reproducible analysis. Replace with a one- or two-sentence description of what your software does and who it is for.",
+      "tags": ["Python", "research", "CLI"],
+      "links": {
+        "repo": "https://github.com/mehdi-sadeghi/example-toolkit",
+        "demo": "",
+        "docs": "",
+        "download": ""
+      }
+    },
+    {
+      "name": "Visualization Library (Sample)",
+      "description": "A minimal library for plotting domain-specific results. List languages, platforms, or related papers here.",
+      "tags": ["JavaScript", "visualization"],
+      "links": {
+        "repo": "https://github.com/mehdi-sadeghi",
+        "demo": "https://mehdi-sadeghi.github.io",
+        "docs": "https://github.com/mehdi-sadeghi#readme",
+        "download": ""
+      }
+    },
+    {
+      "name": "Dataset / Pipeline Scripts",
+      "description": "Scripts and configuration for processing [dataset name]. Link to Zenodo or figshare for downloads if applicable.",
+      "tags": ["data pipeline", "reproducibility"],
+      "links": {
+        "repo": "https://github.com/mehdi-sadeghi",
+        "demo": "",
+        "docs": "",
+        "download": "files/README.md"
+      }
+    }
+  ]
+}

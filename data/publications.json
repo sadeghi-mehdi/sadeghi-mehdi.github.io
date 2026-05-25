@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "title": "Example Paper Title: A Method for [Your Topic]",
+      "authors": "M. Sadeghi, A. Collaborator, and B. Coauthor",
+      "venue": "Journal of Example Research",
+      "year": 2025,
+      "abstract": "Brief placeholder abstract. Summarize the problem, approach, and main finding in two or three sentences.",
+      "links": {
+        "pdf": "files/papers/.gitkeep",
+        "doi": "https://doi.org/10.0000/example",
+        "code": "https://github.com/mehdi-sadeghi/example-repo",
+        "project": ""
+      }
+    },
+    {
+      "title": "Conference Paper on [Placeholder Topic]",
+      "authors": "M. Sadeghi and C. Colleague",
+      "venue": "Proceedings of the Example Conference (EXCONF)",
+      "year": 2024,
+      "abstract": "Optional abstract for conference papers. Remove the abstract key if you prefer a shorter card.",
+      "links": {
+        "pdf": "",
+        "doi": "https://doi.org/10.0000/example2",
+        "code": "",
+        "project": "https://mehdi-sadeghi.github.io"
+      }
+    },
+    {
+      "title": "Preprint: Towards [Your Research Direction]",
+      "authors": "M. Sadeghi et al.",
+      "venue": "arXiv preprint",
+      "year": 2023,
+      "abstract": "",
+      "links": {
+        "pdf": "https://arxiv.org/pdf/0000.00000",
+        "doi": "",
+        "code": "https://github.com/mehdi-sadeghi",
+        "project": ""
+      }
+    }
+  ]
+}

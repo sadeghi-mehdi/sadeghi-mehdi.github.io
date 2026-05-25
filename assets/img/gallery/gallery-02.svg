@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360" role="img" aria-label="Gallery placeholder 2">
+  <rect width="480" height="360" fill="#e4e8ec"/>
+  <rect x="60" y="40" width="360" height="240" rx="4" fill="#c5d0da"/>
+  <text x="240" y="200" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#6b7a86">Conference / fieldwork</text>
+  <text x="240" y="330" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#5a6a78">Gallery image 2 (placeholder)</text>
+</svg>

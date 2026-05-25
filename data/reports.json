@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "title": "Technical Report: [Project Name] — Annual Summary",
+      "authors": "M. Sadeghi",
+      "venue": "Internal / Lab Report",
+      "year": 2025,
+      "abstract": "Placeholder technical report. Use this section for white papers, lab reports, theses chapters, or project deliverables.",
+      "links": {
+        "pdf": "files/README.md",
+        "doi": "",
+        "code": "",
+        "project": ""
+      }
+    },
+    {
+      "title": "Grant Report: Progress on [Funding Agency] Project",
+      "authors": "M. Sadeghi and Research Team",
+      "venue": "Sponsor report",
+      "year": 2024,
+      "abstract": "Short description of milestones, outcomes, and next steps.",
+      "links": {
+        "pdf": "",
+        "doi": "",
+        "code": "",
+        "project": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic homepage of Mehdi Sadeghi — research, publications, software, and contact.">
+  <title>Mehdi Sadeghi</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="site-brand" href="#top" data-brand-name>Mehdi Sadeghi</a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open menu"
+      >
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#reports">Reports</a></li>
+          <li><a href="#software">Tools</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Profile text: edit data/site.json (not this file) -->
+    <section class="section hero" id="home" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-label"></p>
+          <h1 id="hero-heading" data-hero-name>Mehdi Sadeghi</h1>
+          <p class="hero-title" data-hero-title>Ph.D. Student / Researcher</p>
+          <p class="hero-affiliation" data-hero-affiliation>Arizona State University</p>
+          <p class="hero-tagline" data-hero-tagline>Loading…</p>
+        </div>
+        <figure class="hero-photo">
+          <img
+            src="assets/img/profile.jpg"
+            alt=""
+            width="280"
+            height="280"
+            data-hero-image
+          >
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About</h2>
+        <div class="prose" data-about-content>
+          <p class="loading-message">Loading bio…</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="research" aria-labelledby="research-heading">
+      <div class="container">
+        <h2 id="research-heading">Research interests</h2>
+        <ul class="tag-list" data-research-interests>
+          <li class="loading-message">Loading…</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="publications" aria-labelledby="publications-heading">
+      <div class="container">
+        <h2 id="publications-heading">Publications</h2>
+        <p class="section-intro">Peer-reviewed articles, conference papers, and preprints.</p>
+        <div class="card-grid" data-publications>
+          <p class="loading-message">Loading publications…</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="reports" aria-labelledby="reports-heading">
+      <div class="container">
+        <h2 id="reports-heading">Reports</h2>
+        <p class="section-intro">Technical reports, white papers, and project deliverables.</p>
+        <div class="card-grid" data-reports>
+          <p class="loading-message">Loading reports…</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="software" aria-labelledby="software-heading">
+      <div class="container">
+        <h2 id="software-heading">Tools</h2>
+        <p class="section-intro">Open-source projects and research software.</p>
+        <div class="card-grid" data-software>
+          <p class="loading-message">Loading software…</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="resume" aria-labelledby="resume-heading">
+      <div class="container">
+        <h2 id="resume-heading">Resume / CV</h2>
+        <p class="section-intro">Download a PDF version of my curriculum vitae.</p>
+        <div class="resume-block" data-resume>
+          <a class="btn btn-primary" href="files/README.md" data-cv-link>Download CV (PDF)</a>
+          <p class="resume-note" data-cv-note>Add <code>files/cv.pdf</code> and update <code>data/site.json</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 id="gallery-heading">Gallery</h2>
+        <p class="section-intro">Photos from research, teaching, and conferences.</p>
+        <div class="gallery-grid" data-gallery>
+          <p class="loading-message">Loading gallery…</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact</h2>
+        <p class="section-intro">Feel free to reach out for collaborations or questions.</p>
+        <ul class="contact-list" data-contact>
+          <li class="loading-message">Loading contact…</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span data-footer-year></span> <span data-footer-name>Mehdi Sadeghi</span>. All rights reserved.</p>
+      <p class="footer-note">Hosted on <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

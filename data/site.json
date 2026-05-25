@@ -1,0 +1,25 @@
+{
+  "name": "Mehdi Sadeghi",
+  "title": "Ph.D. Candidate / Researcher",
+  "affiliation": "Arizona State University",
+  "tagline": "Researcher working at the intersection of [your field], [method], and [application]. Replace this line with your focus.",
+  "bio": [
+    "I am an academic researcher based at Arizona State University. This paragraph is placeholder text—replace it with a short professional biography: your background, current role, and what drives your work.",
+    "Add a second paragraph if you like: teaching experience, industry collaborations, awards, or the problems you are most excited to solve. Keep the tone clear and approachable."
+  ],
+  "researchInterests": [
+    "Machine learning & data science",
+    "Computational modeling",
+    "Scientific software",
+    "Interdisciplinary applications"
+  ],
+  "profileImage": "assets/img/profile-placeholder.svg",
+  "cv": "files/README.md",
+  "contact": {
+    "email": "your.name@example.edu",
+    "orcid": "https://orcid.org/0000-0000-0000-0000",
+    "scholar": "https://scholar.google.com/",
+    "github": "https://github.com/mehdi-sadeghi",
+    "linkedin": "https://www.linkedin.com/in/your-profile"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "images": [
+    {
+      "src": "assets/img/gallery/gallery-01.svg",
+      "alt": "Placeholder: research lab or campus",
+      "caption": "Replace with a photo from your lab, campus, or field site."
+    },
+    {
+      "src": "assets/img/gallery/gallery-02.svg",
+      "alt": "Placeholder: conference or collaboration",
+      "caption": "Conference presentation, team meeting, or collaboration (placeholder)."
+    },
+    {
+      "src": "assets/img/gallery/gallery-03.svg",
+      "alt": "Placeholder: project or experiment",
+      "caption": "Project setup, experiment, or outreach event (placeholder)."
+    }
+  ]
+}
