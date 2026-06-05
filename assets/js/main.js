@@ -93,6 +93,10 @@
     const card = el("article", "card");
     card.appendChild(el("h3", null, item.title || "Untitled"));
 
+    if (item.abstract && item.abstract.trim()) {
+      card.appendChild(el("p", "card-abstract", item.abstract));
+    }
+
     const meta = el("p", "card-meta");
     if (item.authors) {
       const authors = el("span", "card-authors", item.authors);
@@ -102,12 +106,9 @@
     const venueParts = [item.venue, item.year].filter(Boolean);
     meta.appendChild(document.createTextNode(venueParts.join(", ")));
     card.appendChild(meta);
-
-    if (item.abstract && item.abstract.trim()) {
-      card.appendChild(el("p", "card-abstract", item.abstract));
-    }
-
+    
     card.appendChild(buildActionButtons(item.links));
+    
     return card;
   }
 
@@ -156,7 +157,7 @@
    * @param {object} site
    */
   function renderSite(site) {
-    document.title = site.name + " — Academic Homepage";
+    document.title = site.name + " — Homepage";
 
     const brand = document.querySelector("[data-brand-name]");
     if (brand) brand.textContent = site.name;

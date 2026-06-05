@@ -1,41 +1,41 @@
 {
   "items": [
     {
-      "title": "Example Paper Title: A Method for [Your Topic]",
-      "authors": "M. Sadeghi, A. Collaborator, and B. Coauthor",
-      "venue": "Journal of Example Research",
+      "title": "Evaluation of asphalt mixture cracking resistance and development of a machine learning-based application for cracking tolerance index prediction",
+      "authors": "S. M. Rad, Mehdi Sadeghi, J. Bausano, D. Vivanco, & M. Elkashef",
+      "venue": "Construction and Building Materials",
       "year": 2025,
-      "abstract": "Brief placeholder abstract. Summarize the problem, approach, and main finding in two or three sentences.",
+      "abstract": "",
       "links": {
-        "pdf": "files/papers/.gitkeep",
-        "doi": "https://doi.org/10.0000/example",
-        "code": "https://github.com/mehdi-sadeghi/example-repo",
+        "pdf": "",
+        "doi": "https://doi.org/10.1016/j.conbuildmat.2025.142519",
+        "code": "",
         "project": ""
       }
     },
     {
-      "title": "Conference Paper on [Placeholder Topic]",
-      "authors": "M. Sadeghi and C. Colleague",
-      "venue": "Proceedings of the Example Conference (EXCONF)",
-      "year": 2024,
-      "abstract": "Optional abstract for conference papers. Remove the abstract key if you prefer a shorter card.",
+      "title": "Evaluating the Rutting and Moisture Resistance of Asphalt Mixes in Oklahoma Using Indirect Tensile Test at High Temperature Strength and Hamburg Wheel Tracking Test Corrected Rut Depth and Stripping Number",
+      "authors": "M. Olagunju, S. M. Rad, Mehdi Sadeghi, D. Vivanco, & M. Elkashef",
+      "venue": "Transportation Research Record",
+      "year": 2025,
+      "abstract": "",
       "links": {
         "pdf": "",
-        "doi": "https://doi.org/10.0000/example2",
+        "doi": "https://doi.org/10.1177/03611981251324206",
         "code": "",
-        "project": "https://mehdi-sadeghi.github.io"
+        "project": ""
       }
     },
     {
-      "title": "Preprint: Towards [Your Research Direction]",
-      "authors": "M. Sadeghi et al.",
-      "venue": "arXiv preprint",
-      "year": 2023,
+      "title": "Selection of a laboratory short-term aging protocol to evaluate cracking resistance of asphalt mixes considering production variability",
+      "authors": "P. Akinyoola, H. M. Z. Hassan, Mehdi Sadeghi, D. Vivanco, & M. Elkashef",
+      "venue": "Construction and Building Materials",
+      "year": 2025,
       "abstract": "",
       "links": {
-        "pdf": "https://arxiv.org/pdf/0000.00000",
-        "doi": "",
-        "code": "https://github.com/mehdi-sadeghi",
+        "pdf": "",
+        "doi": "https://doi.org/10.1016/j.conbuildmat.2025.144741",
+        "code": "",
         "project": ""
       }
     }

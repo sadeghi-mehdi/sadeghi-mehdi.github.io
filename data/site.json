@@ -1,6 +1,6 @@
 {
   "name": "Mehdi Sadeghi",
-  "title": "Ph.D. Candidate / Researcher",
+  "title": "Ph.D. Student / Researcher",
   "affiliation": "Arizona State University",
   "tagline": "Researcher working at the intersection of [your field], [method], and [application]. Replace this line with your focus.",
   "bio": [
@@ -13,13 +13,13 @@
     "Scientific software",
     "Interdisciplinary applications"
   ],
-  "profileImage": "assets/img/profile-placeholder.svg",
+  "profileImage": "assets/img/profile.jpg",
   "cv": "files/README.md",
   "contact": {
-    "email": "your.name@example.edu",
-    "orcid": "https://orcid.org/0000-0000-0000-0000",
-    "scholar": "https://scholar.google.com/",
-    "github": "https://github.com/mehdi-sadeghi",
-    "linkedin": "https://www.linkedin.com/in/your-profile"
+    "email": "mehdi.sadeghi@asu.edu",
+    "orcid": "https://orcid.org/0009-0002-9949-1999",
+    "scholar": "https://scholar.google.com/citations?user=_dZBtMgAAAAJ&hl=en",
+    "github": "https://github.com/sadeghi-mehdi",
+    "linkedin": "https://www.linkedin.com/in/sadeghi95"
   }
 }
