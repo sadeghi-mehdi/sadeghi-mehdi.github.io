@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Academic homepage of Mehdi Sadeghi — research, publications, software, and contact.">
+  <meta name="description" content="Academic homepage of Mehdi Sadeghi — research, publications, technical reports, and contact.">
   <title>Mehdi Sadeghi</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -31,7 +32,7 @@
           <li><a href="#research">Research</a></li>
           <li><a href="#publications">Publications</a></li>
           <li><a href="#reports">Tech Reports</a></li>
-          <li><a href="#software">Tools</a></li>
+          <li hidden><a href="#software">Tools</a></li>
           <li><a href="#resume">CV</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -101,7 +102,7 @@
       </div>
     </section>
 
-    <section class="section" id="software" aria-labelledby="software-heading">
+    <section class="section" id="software" aria-labelledby="software-heading" hidden>
       <div class="container">
         <h2 id="software-heading">Tools</h2>
         <p class="section-intro">Open-source projects and research software.</p>
@@ -116,8 +117,8 @@
         <h2 id="resume-heading">Resume / CV</h2>
         <p class="section-intro">Download a PDF version of my curriculum vitae.</p>
         <div class="resume-block" data-resume>
-          <a class="btn btn-primary" href="files/README.md" data-cv-link>Download CV (PDF)</a>
-          <p class="resume-note" data-cv-note>Add <code>files/cv.pdf</code> and update <code>data/site.json</code>.</p>
+          <a class="btn btn-primary" href="files/README.md" data-cv-link hidden>Download CV (PDF)</a>
+          <p class="resume-note" data-cv-note>CV coming soon.</p>
         </div>
       </div>
     </section>
@@ -126,8 +127,16 @@
       <div class="container">
         <h2 id="gallery-heading">Gallery</h2>
         <p class="section-intro">Photos from research, teaching, and conferences.</p>
-        <div class="gallery-grid" data-gallery>
-          <p class="loading-message">Loading gallery…</p>
+        <div class="gallery-scroll">
+          <button class="gallery-scroll-button gallery-scroll-prev" type="button" aria-label="Scroll gallery left" aria-controls="gallery-track" data-gallery-prev>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><polyline points="15.5,5 8.5,12 15.5,19"/></svg>
+          </button>
+          <div class="gallery-grid" id="gallery-track" data-gallery>
+            <p class="loading-message">Loading gallery…</p>
+          </div>
+          <button class="gallery-scroll-button gallery-scroll-next" type="button" aria-label="Scroll gallery right" aria-controls="gallery-track" data-gallery-next>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><polyline points="8.5,5 15.5,12 8.5,19"/></svg>
+          </button>
         </div>
       </div>
     </section>
@@ -142,6 +151,14 @@
       </div>
     </section>
   </main>
+
+  <dialog class="gallery-dialog" data-gallery-dialog aria-labelledby="gallery-dialog-caption">
+    <div class="gallery-dialog-inner">
+      <button class="gallery-dialog-close" type="button" aria-label="Close image viewer" data-gallery-dialog-close>&times;</button>
+      <img alt="" data-gallery-dialog-image>
+      <p id="gallery-dialog-caption" data-gallery-dialog-caption></p>
+    </div>
+  </dialog>
 
   <footer class="site-footer">
     <div class="container footer-inner">

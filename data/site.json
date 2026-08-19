@@ -1,20 +1,24 @@
 {
   "name": "Mehdi Sadeghi",
-  "title": "Ph.D. Student / Researcher",
-  "affiliation": "Arizona State University",
-  "tagline": "Researcher working at the intersection of [your field], [method], and [application]. Replace this line with your focus.",
+  "title": "Graduate Research Associate & Ph.D. Student",
+  "affiliation": "School of Sustainable Engineering and the Built Environment, Arizona State University",
+  "tagline": "Developing data-driven tools and practical solutions for safer, more durable, and more sustainable pavements.",
   "bio": [
-    "I am an academic researcher based at Arizona State University. This paragraph is placeholder text—replace it with a short professional biography: your background, current role, and what drives your work.",
-    "Add a second paragraph if you like: teaching experience, industry collaborations, awards, or the problems you are most excited to solve. Keep the tone clear and approachable."
+    "I am a Graduate Research Associate and Ph.D. student in Civil Engineering at Arizona State University's School of Sustainable Engineering and the Built Environment. My work focuses on asphalt pavements and materials, pavement preservation, and airfield pavement design. I am especially interested in combining laboratory testing with programming, artificial intelligence, and data-driven modeling to help engineers make better decisions and build safer, longer-lasting, and more sustainable pavement systems.",
+    "Before joining ASU, I conducted pavement-materials research at Oklahoma State University. I enjoy turning research into useful software and practical engineering tools, and my experience also includes teaching pavement design, materials laboratories, and pavement management. I contribute to the profession as a peer reviewer for Construction and Building Materials, the International Journal of Pavement Engineering, the International Journal of Pavement Research and Technology, Road Materials and Pavement Design, and Transportation Research Record."
   ],
   "researchInterests": [
-    "Machine learning & data science",
-    "Computational modeling",
-    "Scientific software",
-    "Interdisciplinary applications"
+    "Asphalt pavements",
+    "Asphalt materials",
+    "Pavement preservation",
+    "Airfield pavement design",
+    "Artificial intelligence and machine learning",
+    "Programming and engineering software",
+    "Data-driven pavement modeling",
+    "Pavement sustainability and life-cycle analysis"
   ],
   "profileImage": "assets/img/profile.jpg",
-  "cv": "files/README.md",
+  "cv": "files/Mehdi-Sadeghi-CV.pdf",
   "contact": {
     "email": "mehdi.sadeghi@asu.edu",
     "orcid": "https://orcid.org/0009-0002-9949-1999",

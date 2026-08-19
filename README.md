@@ -8,7 +8,7 @@ A clean, static academic personal website for [GitHub Pages](https://pages.githu
 
 1. Replace placeholder text in [`data/site.json`](data/site.json).
 2. Add your photo to `assets/img/` and update `profileImage` in `site.json`.
-3. Add `files/cv.pdf` and set `"cv": "files/cv.pdf"` in `site.json`.
+3. Add `files/cv.pdf` and set `"cv": "files/cv.pdf"` in `site.json`. Until then, the site shows “CV coming soon.”
 4. Update lists in `data/publications.json`, `data/reports.json`, `data/software.json`, and `data/gallery.json`.
 5. Push to GitHub; enable Pages (see [Deploy](#deploy-to-github-pages) below).
 
@@ -150,7 +150,7 @@ No GitHub Actions or Jekyll configuration is required. The `.nojekyll` file tell
 |---------|----------|
 | Blank sections locally | Use `python -m http.server`, not `file://` |
 | JSON not updating on site | Hard-refresh browser; confirm push to `main` |
-| CV link goes to README | Add `files/cv.pdf` and update `site.json` |
+| CV shows “coming soon” | Add `files/cv.pdf` and update `site.json` |
 | 404 on `data/*.json` | Ensure `.nojekyll` exists in the repo root |
 
 ## License

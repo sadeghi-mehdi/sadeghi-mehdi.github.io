@@ -1,9 +1,22 @@
 {
   "items": [
     {
+      "title": "Analyzing the Cracking Behavior of Asphalt Mixtures Using Principal Component Analysis and K-Means Clustering",
+      "authors": "Mehdi Sadeghi, Sina Mousavi Rad, & Mohamed Elkashef",
+      "venue": "Journal of Testing and Evaluation",
+      "year": 2026,
+      "abstract": "Principal component analysis and K-means clustering are applied to IDEAL-CT results from 165 samples representing 33 plant-produced asphalt mixtures to identify distinct cracking-behavior groups.",
+      "links": {
+        "pdf": "",
+        "doi": "https://doi.org/10.1520/JTE20250213",
+        "code": "",
+        "project": ""
+      }
+    },
+    {
       "title": "Evaluation of asphalt mixture cracking resistance and development of a machine learning-based application for cracking tolerance index prediction",
-      "authors": "S. M. Rad, Mehdi Sadeghi, J. Bausano, D. Vivanco, & M. Elkashef",
-      "venue": "Construction and Building Materials",
+      "authors": "Sina Mousavi Rad, Mehdi Sadeghi, Joseph Bausano, David Vivanco, & Mohamed Elkashef",
+      "venue": "Construction and Building Materials, 490, 142519",
       "year": 2025,
       "abstract": "",
       "links": {
@@ -15,8 +28,8 @@
     },
     {
       "title": "Evaluating the Rutting and Moisture Resistance of Asphalt Mixes in Oklahoma Using Indirect Tensile Test at High Temperature Strength and Hamburg Wheel Tracking Test Corrected Rut Depth and Stripping Number",
-      "authors": "M. Olagunju, S. M. Rad, Mehdi Sadeghi, D. Vivanco, & M. Elkashef",
-      "venue": "Transportation Research Record",
+      "authors": "Michael Olagunju, Sina Mousavi Rad, Mehdi Sadeghi, David Vivanco, & Mohamed Elkashef",
+      "venue": "Transportation Research Record, 2679(7), 109–123",
       "year": 2025,
       "abstract": "",
       "links": {
@@ -28,8 +41,8 @@
     },
     {
       "title": "Selection of a laboratory short-term aging protocol to evaluate cracking resistance of asphalt mixes considering production variability",
-      "authors": "P. Akinyoola, H. M. Z. Hassan, Mehdi Sadeghi, D. Vivanco, & M. Elkashef",
-      "venue": "Construction and Building Materials",
+      "authors": "Paul Akinyoola, Hafiz Muhammad Zahid Hassan, Mehdi Sadeghi, David Vivanco, & Mohamed Elkashef",
+      "venue": "Construction and Building Materials, 505, 144741",
       "year": 2025,
       "abstract": "",
       "links": {

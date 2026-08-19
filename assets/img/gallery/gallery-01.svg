@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360" role="img" aria-label="Gallery placeholder 1">
-  <rect width="480" height="360" fill="#dfe6ec"/>
-  <rect x="40" y="50" width="400" height="220" rx="4" fill="#b8c8d8"/>
-  <circle cx="120" cy="140" r="28" fill="#8aa4b8"/>
-  <polygon points="40,270 160,170 280,250 400,120 440,270" fill="#7a96aa"/>
-  <text x="240" y="330" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#5a6a78">Gallery image 1 (placeholder)</text>
-</svg>

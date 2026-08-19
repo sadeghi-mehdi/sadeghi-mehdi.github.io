@@ -4,7 +4,7 @@ desktop.ini
 
 *.swp
 *~
-
+*.code-workspace
 .vscode/
 .idea/
 

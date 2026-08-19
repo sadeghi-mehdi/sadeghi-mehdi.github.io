@@ -1,29 +1,16 @@
 {
   "items": [
     {
-      "title": "Technical Report: [Project Name] — Annual Summary",
-      "authors": "M. Sadeghi",
-      "venue": "Internal / Lab Report",
+      "title": "Investigating the Aging Behavior of Asphalt Binders at Different Production Stages and During the Service Life of the Pavement",
+      "authors": "Mohamed Elkashef, Debakanta Deb Mishra, Sina Mousavi Rad, Michael Olagunju, Mehdi Sadeghi, & Adeoluwa Gbolade",
+      "venue": "U.S. Department of Transportation, National Transportation Library",
       "year": 2025,
-      "abstract": "Placeholder technical report. Use this section for white papers, lab reports, theses chapters, or project deliverables.",
+      "abstract": "This report evaluates cracking, rutting, moisture susceptibility, compaction, and binder rheology for 36 Oklahoma asphalt mixtures, including the effects of long-term aging and machine-learning prediction of cracking tolerance.",
       "links": {
-        "pdf": "files/README.md",
+        "pdf": "https://rosap.ntl.bts.gov/view/dot/92750/dot_92750_DS1.pdf",
         "doi": "",
         "code": "",
-        "project": ""
-      }
-    },
-    {
-      "title": "Grant Report: Progress on [Funding Agency] Project",
-      "authors": "M. Sadeghi and Research Team",
-      "venue": "Sponsor report",
-      "year": 2024,
-      "abstract": "Short description of milestones, outcomes, and next steps.",
-      "links": {
-        "pdf": "",
-        "doi": "",
-        "code": "",
-        "project": ""
+        "project": "https://rosap.ntl.bts.gov/view/dot/92750"
       }
     }
   ]

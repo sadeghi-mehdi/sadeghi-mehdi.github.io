@@ -71,10 +71,10 @@
       anchor.href = url;
       anchor.textContent = label;
 
-      if (url.endsWith(".pdf") || key === "pdf" || key === "download") {
+      if (!/^https?:\/\//i.test(url) && (url.split(/[?#]/)[0].endsWith(".pdf") || key === "download")) {
         anchor.setAttribute("download", "");
       }
-      if (url.startsWith("http")) {
+      if (/^https?:\/\//i.test(url)) {
         anchor.target = "_blank";
         anchor.rel = "noopener noreferrer";
       }
@@ -157,16 +157,17 @@
    * @param {object} site
    */
   function renderSite(site) {
-    document.title = site.name + " — Homepage";
+    const siteName = site.name || "Mehdi Sadeghi";
+    document.title = siteName + " — Homepage";
 
     const brand = document.querySelector("[data-brand-name]");
-    if (brand) brand.textContent = site.name;
+    if (brand) brand.textContent = siteName;
 
     const footerName = document.querySelector("[data-footer-name]");
-    if (footerName) footerName.textContent = site.name;
+    if (footerName) footerName.textContent = siteName;
 
     const heroName = document.querySelector("[data-hero-name]");
-    if (heroName) heroName.textContent = site.name;
+    if (heroName) heroName.textContent = siteName;
 
     const heroTitle = document.querySelector("[data-hero-title]");
     if (heroTitle) heroTitle.textContent = site.title || "";
@@ -183,7 +184,7 @@
     const heroImage = document.querySelector("[data-hero-image]");
     if (heroImage && site.profileImage) {
       heroImage.src = site.profileImage;
-      heroImage.alt = "Portrait of " + site.name;
+      heroImage.alt = "Portrait of " + siteName;
     }
 
     const about = document.querySelector("[data-about-content]");
@@ -214,28 +215,35 @@
 
     const cvLink = document.querySelector("[data-cv-link]");
     const cvNote = document.querySelector("[data-cv-note]");
-    if (cvLink && site.cv) {
-      cvLink.href = site.cv;
-      const isPdf = /\.pdf$/i.test(site.cv);
-      cvLink.textContent = isPdf ? "Download CV (PDF)" : "View CV information";
-      if (!isPdf) cvLink.removeAttribute("download");
-      if (cvNote) cvNote.classList.toggle("is-hidden", isPdf);
+    if (cvLink) {
+      const cvPath = String(site.cv || "").trim();
+      const isPdf = /\.pdf(?:[?#].*)?$/i.test(cvPath);
+      cvLink.hidden = !isPdf;
+      if (isPdf) {
+        cvLink.href = cvPath;
+        cvLink.setAttribute("download", "");
+      }
+      if (cvNote) {
+        cvNote.textContent = "CV coming soon.";
+        cvNote.classList.toggle("is-hidden", isPdf);
+      }
     }
 
     const contact = document.querySelector("[data-contact]");
-    if (contact && site.contact) {
+    if (contact) {
       contact.innerHTML = "";
+      const contactData = site.contact || {};
       const entries = [
-        { key: "email", label: "Email", href: "mailto:" + site.contact.email, text: site.contact.email },
-        { key: "orcid", label: "ORCID", href: site.contact.orcid, text: "ORCID profile" },
-        { key: "scholar", label: "Google Scholar", href: site.contact.scholar, text: "Google Scholar" },
-        { key: "github", label: "GitHub", href: site.contact.github, text: "GitHub" },
-        { key: "linkedin", label: "LinkedIn", href: site.contact.linkedin, text: "LinkedIn" },
+        { key: "email", label: "Email", text: contactData.email },
+        { key: "orcid", label: "ORCID", text: "ORCID profile" },
+        { key: "scholar", label: "Google Scholar", text: "Google Scholar" },
+        { key: "github", label: "GitHub", text: "GitHub" },
+        { key: "linkedin", label: "LinkedIn", text: "LinkedIn" },
       ];
 
       let added = false;
       entries.forEach(function (entry) {
-        const value = site.contact[entry.key];
+        const value = contactData[entry.key];
         if (!value || !String(value).trim()) return;
 
         const li = el("li");
@@ -276,11 +284,20 @@
 
     images.forEach(function (image) {
       const figure = el("figure", "gallery-item");
+      const openButton = document.createElement("button");
+      openButton.className = "gallery-open";
+      openButton.type = "button";
+      openButton.setAttribute("aria-label", "View larger image: " + (image.caption || image.alt || "Gallery image"));
+
       const img = document.createElement("img");
       img.src = image.src;
       img.alt = image.alt || "";
       img.loading = "lazy";
-      figure.appendChild(img);
+      openButton.appendChild(img);
+      openButton.addEventListener("click", function () {
+        openGalleryImage(image);
+      });
+      figure.appendChild(openButton);
 
       if (image.caption) {
         figure.appendChild(el("figcaption", null, image.caption));
@@ -288,6 +305,77 @@
 
       container.appendChild(figure);
     });
+
+    container.dispatchEvent(new Event("galleryrendered"));
+  }
+
+  function openGalleryImage(image) {
+    const dialog = document.querySelector("[data-gallery-dialog]");
+    const dialogImage = document.querySelector("[data-gallery-dialog-image]");
+    const dialogCaption = document.querySelector("[data-gallery-dialog-caption]");
+    if (!dialog || !dialogImage || !dialogCaption) return;
+
+    dialogImage.src = image.src;
+    dialogImage.alt = image.alt || "";
+    dialogCaption.textContent = image.caption || image.alt || "";
+    dialog.showModal();
+  }
+
+  function initGalleryDialog() {
+    const dialog = document.querySelector("[data-gallery-dialog]");
+    const closeButton = document.querySelector("[data-gallery-dialog-close]");
+    if (!dialog || !closeButton) return;
+
+    closeButton.addEventListener("click", function () {
+      dialog.close();
+    });
+
+    dialog.addEventListener("click", function (event) {
+      if (event.target === dialog) dialog.close();
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && dialog.open) {
+        event.preventDefault();
+        dialog.close();
+      }
+    });
+  }
+
+  function initGalleryControls() {
+    const gallery = document.querySelector("[data-gallery]");
+    const previous = document.querySelector("[data-gallery-prev]");
+    const next = document.querySelector("[data-gallery-next]");
+    if (!gallery || !previous || !next) return;
+
+    function updateButtons() {
+      const maxScroll = gallery.scrollWidth - gallery.clientWidth;
+      previous.disabled = gallery.scrollLeft <= 10;
+      next.disabled = gallery.scrollLeft >= maxScroll - 10;
+    }
+
+    function scrollGallery(direction) {
+      const firstItem = gallery.querySelector(".gallery-item");
+      const gap = parseFloat(getComputedStyle(gallery).columnGap) || 0;
+      const distance = firstItem ? firstItem.getBoundingClientRect().width + gap : gallery.clientWidth * 0.8;
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      gallery.scrollBy({
+        left: direction * distance,
+        behavior: reduceMotion ? "auto" : "smooth",
+      });
+    }
+
+    previous.addEventListener("click", function () {
+      scrollGallery(-1);
+    });
+    next.addEventListener("click", function () {
+      scrollGallery(1);
+    });
+    gallery.addEventListener("scroll", updateButtons, { passive: true });
+    gallery.addEventListener("galleryrendered", updateButtons);
+    window.addEventListener("resize", updateButtons);
+
+    updateButtons();
   }
 
   function initNavigation() {
@@ -332,6 +420,8 @@
   async function init() {
     initNavigation();
     initFooterYear();
+    initGalleryDialog();
+    initGalleryControls();
 
     try {
       const site = await fetchJSON(DATA_BASE + "site.json");

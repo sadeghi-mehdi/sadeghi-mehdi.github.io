@@ -1,19 +1,24 @@
 {
   "images": [
     {
-      "src": "assets/img/gallery/gallery-01.svg",
-      "alt": "Placeholder: research lab or campus",
-      "caption": "Replace with a photo from your lab, campus, or field site."
+      "src": "assets/img/gallery/ASCEJun2025.jpg",
+      "alt": "The ASCE International Airfield and Highway Pavements Conference, Jun 2025",
+      "caption": "The ASCE International Airfield and Highway Pavements Conference, Jun 2025."
     },
     {
-      "src": "assets/img/gallery/gallery-02.svg",
-      "alt": "Placeholder: conference or collaboration",
-      "caption": "Conference presentation, team meeting, or collaboration (placeholder)."
+      "src": "assets/img/gallery/TRBJan2025_1.jpg",
+      "alt": "The 104th Transportation Research Board (TRB) Annual Meeting, Jan 2025",
+      "caption": "The 104th Transportation Research Board (TRB) Annual Meeting, Jan 2025."
     },
     {
-      "src": "assets/img/gallery/gallery-03.svg",
-      "alt": "Placeholder: project or experiment",
-      "caption": "Project setup, experiment, or outreach event (placeholder)."
+      "src": "assets/img/gallery/TRBJan2025_2.jpg",
+      "alt": "The 104th Transportation Research Board (TRB) Annual Meeting, Jan 2025",
+      "caption": "The 104th Transportation Research Board (TRB) Annual Meeting, Jan 2025."
+    },
+    {
+      "src": "assets/img/gallery/OTRDOCT2024.jpg",
+      "alt": "Oklahoma Transportation Research Day, Oct 2024",
+      "caption": "Oklahoma Transportation Research Day, Oct 2024."
     }
   ]
 }
