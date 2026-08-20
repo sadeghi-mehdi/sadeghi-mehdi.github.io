@@ -30,11 +30,11 @@
           <li><a href="#top">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#research">Research</a></li>
+          <li><a href="#resume">CV</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#publications">Publications</a></li>
           <li><a href="#reports">Tech Reports</a></li>
           <li hidden><a href="#software">Tools</a></li>
-          <li><a href="#resume">CV</a></li>
-          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -82,6 +82,35 @@
       </div>
     </section>
 
+    <section class="section" id="resume" aria-labelledby="resume-heading">
+      <div class="container">
+        <h2 id="resume-heading">Resume / CV</h2>
+        <p class="section-intro">Download my curriculum vitae.</p>
+        <div class="resume-block" data-resume>
+          <a class="btn btn-primary" href="files/README.md" data-cv-link hidden>Download CV (PDF)</a>
+          <p class="resume-note" data-cv-note>CV coming soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 id="gallery-heading">Gallery</h2>
+        <p class="section-intro">Photos from presentations and conferences.</p>
+        <div class="gallery-scroll">
+          <button class="gallery-scroll-button gallery-scroll-prev" type="button" aria-label="Scroll gallery left" aria-controls="gallery-track" data-gallery-prev>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><polyline points="15.5,5 8.5,12 15.5,19"/></svg>
+          </button>
+          <div class="gallery-grid" id="gallery-track" data-gallery>
+            <p class="loading-message">Loading gallery…</p>
+          </div>
+          <button class="gallery-scroll-button gallery-scroll-next" type="button" aria-label="Scroll gallery right" aria-controls="gallery-track" data-gallery-next>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><polyline points="8.5,5 15.5,12 8.5,19"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="publications" aria-labelledby="publications-heading">
       <div class="container">
         <h2 id="publications-heading">Publications</h2>
@@ -112,36 +141,7 @@
       </div>
     </section>
 
-    <section class="section section-alt" id="resume" aria-labelledby="resume-heading">
-      <div class="container">
-        <h2 id="resume-heading">Resume / CV</h2>
-        <p class="section-intro">Download my curriculum vitae.</p>
-        <div class="resume-block" data-resume>
-          <a class="btn btn-primary" href="files/README.md" data-cv-link hidden>Download CV (PDF)</a>
-          <p class="resume-note" data-cv-note>CV coming soon.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="gallery" aria-labelledby="gallery-heading">
-      <div class="container">
-        <h2 id="gallery-heading">Gallery</h2>
-        <p class="section-intro">Photos from presentations and conferences.</p>
-        <div class="gallery-scroll">
-          <button class="gallery-scroll-button gallery-scroll-prev" type="button" aria-label="Scroll gallery left" aria-controls="gallery-track" data-gallery-prev>
-            <svg aria-hidden="true" viewBox="0 0 24 24"><polyline points="15.5,5 8.5,12 15.5,19"/></svg>
-          </button>
-          <div class="gallery-grid" id="gallery-track" data-gallery>
-            <p class="loading-message">Loading gallery…</p>
-          </div>
-          <button class="gallery-scroll-button gallery-scroll-next" type="button" aria-label="Scroll gallery right" aria-controls="gallery-track" data-gallery-next>
-            <svg aria-hidden="true" viewBox="0 0 24 24"><polyline points="8.5,5 15.5,12 8.5,19"/></svg>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="contact" aria-labelledby="contact-heading">
+    <section class="section" id="contact" aria-labelledby="contact-heading">
       <div class="container">
         <h2 id="contact-heading">Contact</h2>
         <p class="section-intro">Feel free to reach out.</p>
